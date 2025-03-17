@@ -1,0 +1,63 @@
+/*
+#include <stdio.h>
+
+int main() {
+		float x=0;
+		float y=0;
+		char operation;
+
+		printf("Enter x: ");
+		scanf("%f", &x);
+		printf("Enter y: ");
+		scanf("%f", &y);
+		printf("Enter the operation: ");
+		scanf(" %c", &operation); // the space
+
+	if(operation == '+'){
+		printf("%f", x + y);
+}	if(operation == '-'){
+		printf("%f",  x - y);
+} if(operation == '*' ){
+		printf("%f", x * y);
+} if(operation == '/'){
+		printf("%f", x / y);
+}   
+		return 0;
+}
+*/
+
+/*
+#include <stdio.h>
+
+int main() {
+	float num1 = 0;
+	float num2 = 0;
+	char operation;
+
+		printf("Enter num1: ");			
+    	scanf("%f", &num1);
+		printf("Enter num2: ");
+	    scanf("%f", &num2);
+		printf("Enter the operation: ");
+	   	scanf(" %c", &operation);
+
+ if(operation == '+'){
+  printf("%f", num1 + num2);
+} 
+ else if(operation == '-'){
+  printf("%f", num1 - num2);
+} 
+ else if(operation == '*'){
+  printf("%f %f %f", num1 * num2, num1 * num1, num2 * num2);
+} 
+ else if(operation == '/' && num2 != 0){
+  printf("%f", num1 / num2);
+} 
+ else {
+  printf("Error");
+}
+return 0;
+}
+*/
+
+
