@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArmDrone | Drone Store</title>
+    <meta
+      name="description"
+      content="ArmDrone is a premium drone store for creators, explorers, and travelers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <div class="brand-mark">A</div>
+          <span>ArmDrone</span>
+        </div>
+
+        <nav class="main-nav">
+          <a href="#shop" data-i18n="navShop">Shop</a>
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#team" data-i18n="navTeam">Team</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <select id="languageSwitcher" aria-label="Language switcher">
+            <option value="en">English</option>
+            <option value="hy">Հայերեն</option>
+            <option value="ru">Русский</option>
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+          </select>
+
+          <button class="wallet-btn" id="connectWalletBtn" type="button" data-i18n="connectWallet">
+            Connect wallet
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow" data-i18n="heroEyebrow">See the world differently</span>
+            <h1 data-i18n="heroTitle">Fly smarter. Create bigger.</h1>
+            <p data-i18n="heroText">
+              Premium drones for creators, explorers, and travelers who want to capture every moment from above.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#shop" class="primary-btn" data-i18n="shopNow">Shop now</a>
+              <a href="#team" class="secondary-btn" data-i18n="readTeam">Read about the team</a>
+            </div>
+
+            <ul class="hero-stats">
+              <li>
+                <strong>4.9/5</strong>
+                <span data-i18n="customerRating">Customer rating</span>
+              </li>
+              <li>
+                <strong>12k+</strong>
+                <span data-i18n="orders">Orders</span>
+              </li>
+              <li>
+                <strong>24/7</strong>
+                <span data-i18n="support">Support</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-media">
+            <img
+              src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=1200&q=80"
+              alt="Drone flying in open sky"
+            />
+            <div class="floating-card">
+              <span class="mini-label" data-i18n="newArrival">New arrival</span>
+              <h3>SkyCam Mini</h3>
+              <p>$499</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container feature-grid">
+          <div class="feature-item">
+            <span class="feature-icon">✦</span>
+            <h3 data-i18n="feature1Title">4K Cinematic Shots</h3>
+            <p data-i18n="feature1Text">Capture sharp footage with smooth stabilization.</p>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">↗</span>
+            <h3 data-i18n="feature2Title">Long Range Flight</h3>
+            <p data-i18n="feature2Text">Go farther with reliable performance and smarter controls.</p>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">◎</span>
+            <h3 data-i18n="feature3Title">Easy to Fly</h3>
+            <p data-i18n="feature3Text">Built for beginners and professionals alike.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop" class="products">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="small-label" data-i18n="collection">Collection</span>
+              <h2 data-i18n="shopTitle">Explore our drones</h2>
+            </div>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80"
+              alt="Professional drone pilot"
+            />
+          </div>
+          <div class="about-copy">
+            <span class="small-label" data-i18n="whyUs">Why ArmDrone</span>
+            <h2 data-i18n="aboutTitle">Built for flight. Designed for inspiration.</h2>
+            <p data-i18n="aboutText1">
+              We help people choose the right drone for their ambitions — from panoramic filming to travel shooting, landscape exploration, and precision aerial work.
+            </p>
+            <p data-i18n="aboutText2">
+              Every product in our store is selected for quality, reliability, and ease of use, so you can focus on the experience instead of the setup.
+            </p>
+
+            <div class="about-points">
+              <div>
+                <strong>100%</strong>
+                <span data-i18n="tested">Tested quality</span>
+              </div>
+              <div>
+                <strong>2-4 days</strong>
+                <span data-i18n="shipping">Fast shipping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="team">
+        <div class="container">
+          <div class="section-head center">
+            <div>
+              <span class="small-label" data-i18n="teamLabel">Our team</span>
+              <h2 data-i18n="teamTitle">Meet the ArmDrone crew</h2>
+            </div>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80" alt="Team member portrait" />
+              <div>
+                <h3>Aram Petrosyan</h3>
+                <p data-i18n="role1">Founder & drone specialist</p>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80" alt="Team member portrait" />
+              <div>
+                <h3>Anna Simonyan</h3>
+                <p data-i18n="role2">Creative strategist</p>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80" alt="Team member portrait" />
+              <div>
+                <h3>David Karapetyan</h3>
+                <p data-i18n="role3">Flight engineer</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo">
+        <div class="container promo-box">
+          <div>
+            <span class="small-label" data-i18n="limitedOffer">Limited offer</span>
+            <h2 data-i18n="promoTitle">Save up to 20% on selected models.</h2>
+          </div>
+          <a href="#shop" class="primary-btn" data-i18n="viewDeals">View deals</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <div class="brand-mark">A</div>
+            <span>ArmDrone</span>
+          </div>
+          <p data-i18n="footerText">Your flight companion for better pictures, better stories, and better views.</p>
+        </div>
+
+        <div>
+          <h4 data-i18n="contact">Contact</h4>
+          <ul>
+            <li>Email: hello@armdrone.com</li>
+            <li>Phone: +374 55 123 456</li>
+            <li>Yerevan, Armenia</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 data-i18n="hours">Opening hours</h4>
+          <ul>
+            <li>Mon–Fri: 9:00–18:00</li>
+            <li>Sat: 10:00–15:00</li>
+            <li>Sun: Closed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container bottom-bar">
+        <span>© 2025 ArmDrone</span>
+        <span data-i18n="rights">All rights reserved</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
